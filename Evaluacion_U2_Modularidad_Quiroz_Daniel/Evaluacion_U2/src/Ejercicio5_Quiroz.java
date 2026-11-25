@@ -12,10 +12,10 @@ public class Ejercicio5_Quiroz {
         return n + sumaPares(n - 2);
     }
     public static boolean esCapicua(String s) {
-        if (s.length() <= 1) {
+        if (String.length() <= 1) {
             return true;
         }
-        if (s.charAt(0) != s.charAt(s.length() - 1)) {
+        if (String.charAt(0) != s.charAt(s.length() - 1)) {
             return false;
         }
         return esCapicua(s.substring(1, s.length() - 1));
