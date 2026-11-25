@@ -11,14 +11,14 @@ public class Ejercicio5_Quiroz {
 
         return n + sumaPares(n - 2);
     }
-    public static boolean esCapicua(String s) {
-        if (String.length() <= 1) {
+    public static boolean esCapicua(String palabra) {
+        if (palabra.length() <= 1) {
             return true;
         }
-        if (String.charAt(0) != s.charAt(s.length() - 1)) {
+        if (palabra.charAt(0) != palabra.charAt(palabra.length() - 1)) {
             return false;
         }
-        return esCapicua(s.substring(1, s.length() - 1));
+        return esCapicua(palabra.substring(1, palabra.length() - 1));
     }
     public static void main(String[] args) {
         System.out.println("sumaPares(10) = " + sumaPares(10));
